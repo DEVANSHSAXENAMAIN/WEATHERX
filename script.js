@@ -47,7 +47,7 @@ const darkToggle = document.getElementById('dark-toggle');
 const darkIcon = document.getElementById('dark-icon');
 const soundToggle = document.getElementById('sound-toggle');
 const soundIcon = document.getElementById('sound-icon');
-const key = "2f745fa85d563da5adb87b6cd4b81caf";
+const key = "2b00cd67e1accdbba615b3215adc3272";
 
 // --- Settings State ---
 let isDarkMode = false;
