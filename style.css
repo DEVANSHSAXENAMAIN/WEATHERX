@@ -350,17 +350,20 @@ body::before {
 
 .developer-footer {
     position: fixed;
-    right: 32px;   /* distance from right edge */
-    bottom: 20px;  /* distance from bottom edge */
+    left: 0;
+    right: 0;
+    bottom: 20px; /* Adjust as needed for spacing from bottom */
+    text-align: center;
     z-index: 1000;
-    color: #ff7f32;      /* same orange as your theme */
+    color: #ff7f32;
     font-weight: bold;
     font-size: 1.3rem;
     letter-spacing: 0.03em;
     font-family: 'Poppins', sans-serif;
     background: transparent;
     user-select: none;
-    pointer-events: none; /* so it doesn't block clicks */
+    pointer-events: none;
+
 }
 /* For dark mode, footer text should stand out */
 body.darkmode .developer-footer {
