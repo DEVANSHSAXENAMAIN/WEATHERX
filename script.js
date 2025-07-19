@@ -80,7 +80,7 @@ function getWeather() {
         setBodyClass();
         return;
     }
-    let url = `https://api.openweathermap.org/data/2.5/weather?q=${encodeURIComponent(cityValue)}&appid=${key}&units=metric`;
+    let url = `https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={2b00cd67e1accdbba615b3215adc3272}`;
 
     fetch(url)
         .then(resp => resp.json())
