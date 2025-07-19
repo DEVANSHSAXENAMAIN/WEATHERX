@@ -349,18 +349,19 @@ body::before {
 /* ...existing styles... */
 
 .developer-footer {
-    width: 100vw;
-    text-align: center;
-    padding: 2rem 0 1.5rem 0;
-    font-size: 1.6rem;
+    position: fixed;
+    right: 32px;   /* distance from right edge */
+    bottom: 20px;  /* distance from bottom edge */
+    z-index: 1000;
+    color: #ff7f32;      /* same orange as your theme */
     font-weight: bold;
-    color: var(--orange);
-    letter-spacing: 0.08rem;
-    background: none;
-    position: relative;
-    z-index: 1;
+    font-size: 1.3rem;
+    letter-spacing: 0.03em;
+    font-family: 'Poppins', sans-serif;
+    background: transparent;
+    user-select: none;
+    pointer-events: none; /* so it doesn't block clicks */
 }
-
 /* For dark mode, footer text should stand out */
 body.darkmode .developer-footer {
     color: #ffd580;
